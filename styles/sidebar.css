@@ -1,0 +1,65 @@
+:root {
+  --navy : #152243;
+}
+
+body {
+  background-color: #E2E1E5;
+}
+.nav {
+  background-color: #FFFFFF;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 20rem;
+}
+
+
+.nav__content {
+  display: flex;
+  margin: 1rem 0 1rem 0;
+
+}
+
+.nav__content--icon {
+  transform: scale(1.8);
+  margin-right: 2rem;
+  color: var(--navy);
+}
+
+.nav__content--text {
+  color: var(--navy);
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin:0;
+
+}
+
+a:focus, :hover, :visited, :link, :active {
+  text-decoration: none;
+}
+
+.toggler {
+  cursor: pointer;
+  margin: 2rem;
+  transform: scale(2.0);
+  color: var(--navy);
+}
+
+
+.collapsed.nav{
+  width: 4.5%;
+}
+
+.collapsed .nav__content--icon {
+  margin-bottom: 0.5rem;
+}
+.collapsed .nav__content--text {
+  display: none;
+
+}
+
+.notCollapsed.nav{
+  width: 25%;
+}
+
